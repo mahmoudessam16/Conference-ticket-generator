@@ -193,7 +193,7 @@ body main form span img {
   }
   body {
     background-image: url(../images/background-mobile.png);
-    overflow: hidden;
+    overflow-x: hidden;
   }
   body .top {
     width: 120px;
@@ -209,7 +209,7 @@ body main form span img {
   }
   body .circle-center {
     width: 200px;
-    right: -22%;
+    right: -20%;
   }
   body header img {
     width: 150px;

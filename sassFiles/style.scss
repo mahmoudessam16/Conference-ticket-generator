@@ -219,7 +219,7 @@ body {
     }
     body {
         background-image: url(../images/background-mobile.png);
-        overflow: hidden;
+        overflow-x: hidden;
         .top {
             width: 120px;
             top: 20px;
@@ -234,7 +234,7 @@ body {
         }   
         .circle-center {
             width: 200px;
-            right: -22%;
+            right: -20%;
         }
         header {
             img {
