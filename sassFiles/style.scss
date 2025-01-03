@@ -1,0 +1,259 @@
+// colors
+$Neutral0: rgb(255, 255, 255);
+$Neutral300: rgb(210, 209, 214);
+$Neutral500: rgb(135, 132, 164);
+$Neutral700: rgb(75, 72, 106);
+$Neutral900: rgb(12, 8, 43);
+$Orange500: rgb(245, 114, 97);
+$Orange700: rgb(225, 97, 81);
+$GradientText: rgb(243, 115, 98) to rgb(255, 255, 255);
+
+// Font 
+$inconsolata: "Inconsolata", serif;
+
+// Global Attributes
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+body {
+    font-family: $inconsolata;
+    background-image: url(../images/background-desktop.png), url(../images/pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .top {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 300px;
+        z-index: -1;
+    }
+    .lines {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 600px;
+        z-index: -1;
+    }
+    .circle-top {
+        position: absolute;
+        top: -90px;
+        left: 40px;
+        z-index: -1;
+    }   
+    .circle-center {
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        z-index: -1;
+    }
+    header {
+        padding: 40px 0;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    main {
+        section {
+            text-align: center;
+            h1 {
+                font-size: 60px;
+                color: $Neutral0;
+            }
+            p {
+                font-size: 22px;
+                color: $Neutral300;
+                padding: 20px 0;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 65%;
+            margin: 10px auto 100px auto;
+            div {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+                label {
+                    font-size: 20px;
+                    color: $Neutral0;
+                }
+                input {
+                    margin: 10px 0;
+                    padding: 15px 0 15px 10px;
+                    border-radius: 8px;
+                    border: 1px solid $Neutral500;
+                    outline: none;
+                    background-color: transparent;
+                    caret-color: $Neutral300;
+                    color: $Neutral300;
+                    font-size: 15px;
+                    background-color: rgb(75, 72, 106, 0.3);
+                }
+                input[type='submit'] {
+                    background-color: $Orange500;
+                    border: none;
+                    font-size: 20px;
+                    font-family: $inconsolata;
+                    font-weight: 900;
+                    color: $Neutral900;
+                    cursor: pointer;
+                }
+            }
+            .file-input {
+                margin-bottom: 15px;
+                height: 140px;
+                border: 2px dashed $Neutral700;
+                padding: 20px;
+                border-radius: 6px;
+                position: relative;
+                background-color: rgb(75, 72, 106, 0.3);
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                img {
+                    position: absolute;
+                    top: 15%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50px;
+                    height: 50px;
+                    background-color: $Neutral700;
+                    border: 1px solid $Neutral500;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                p {
+                    color: white;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: lighter;
+                    cursor: pointer;
+                }
+            }
+            span {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                color: $Neutral300;
+                margin: -5px 0 10px 0;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// Tablet
+@media (max-width: 765px) {
+    .container {
+        width: 85%;
+    }
+    body {
+        background-image: url(../images/background-tablet.png);
+        .top {
+            width: 200px;
+        }
+        .bottom {
+            width: 450px;
+        }
+        .circle-top {
+            top: -90px;
+            left: 0;
+        }   
+        .circle-center {
+            right: 10%;
+        }
+        main {
+            section {
+                h1 {
+                    font-size: 38px;
+                }
+                p {
+                    font-size: 18px;
+                    padding: 20px 0;
+                }
+            }
+            form {
+                width: 85%;
+            }
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 450px) {
+    .container {
+        width: 95%;
+    }
+    body {
+        background-image: url(../images/background-mobile.png);
+        overflow: hidden;
+        .top {
+            width: 120px;
+            top: 20px;
+        }
+        .bottom {
+            width: 240px;
+        }
+        .circle-top {
+            width: 200px;
+            top: -70px;
+            left: -40px;
+        }   
+        .circle-center {
+            width: 200px;
+            right: -22%;
+        }
+        header {
+            img {
+                width: 150px;
+            }
+        }
+        main {
+            section {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 16px;
+                    padding: 20px;
+                }
+            }
+            form {
+                width: 95%;
+            }
+        }
+    }
+}
