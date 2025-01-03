@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <!-- CSS link -->
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo-mark.svg">
+  <title>Conference ticket generator</title>
+</head>
+<body>
+  <img src="images/pattern-squiggly-line-bottom.svg" alt="bottom-line" class="bottom">
+  <img src="images/pattern-squiggly-line-top.svg" alt="bottom-line" class="top">
+  <img src="images/pattern-lines.svg" alt="lines" class="lines">
+  <img src="images/pattern-circle.svg" alt="circle" class="circle-top">
+  <img src="images/pattern-circle.svg" alt="circle" class="circle-center">
+  <header class="container">
+      <img src="images/logo-full.svg" alt="logo-full">
+  </header>
+  <main class="container">
+    <section>
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </section>
+    <form>
+      <label for="avatar">Upload Avatar</label>
+      <div class="file-input">
+        <input type="file" name="avatar" id="avatar">
+        <img src="images/icon-upload.svg" alt="upload" id="upload">
+        <p>Drag and drop or click to upload"</p>
+      </div>
+      <span class="warning"><img src="images/icon-info.svg" alt="info">Upload your photo (JPG or PNG, max size: 500KB).</span>
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="gitusername">Github Username</label>
+        <input type="text" name="gitusername" id="gitusername">
+      </div>
+      <div>
+        <input type="submit" value="Generate My Ticket">
+      </div>
+    </form>
+  </main>
+  <!-- Generated tickets starts -->
+  <!-- Congrats, ( Full Name )! Your ticket is ready. -->
+  <!-- We've emailed your ticket to (Email Address ) and will send updates in the run up to the event. -->
+  <!-- Coding Conf
+  Jan 31, 2025 / Austin, TX -->
+  <!-- Generated tickets ends -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
