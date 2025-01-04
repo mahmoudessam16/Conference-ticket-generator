@@ -24,6 +24,7 @@ body {
   background-image: url(../images/background-desktop.png), url(../images/pattern-circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 body .top {
   position: absolute;
