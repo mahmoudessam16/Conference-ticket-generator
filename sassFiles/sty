@@ -21,7 +21,7 @@ svg {
 
 body {
   font-family: "Inconsolata", serif;
-  background-image: url(../images/background-desktop.png);
+  background-image: url(../images/background-desktop.png), url(../images/pattern-circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -41,8 +41,9 @@ body .lines {
   z-index: -1;
 }
 body .bottom {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 600px;
   z-index: -1;
 }
@@ -59,7 +60,7 @@ body .circle-center {
   z-index: -1;
 }
 body header {
-  padding: 40px 0px;
+  padding: 40px 0;
 }
 body header img {
   display: block;
@@ -71,10 +72,10 @@ body main section {
 body main section h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
-  padding: 30px 50px 0px;
+  padding: 0 50px;
 }
 body main section p {
-  width: 100%;
+  width: 450px;
   margin: auto;
   font-size: 22px;
   color: rgb(210, 209, 214);
@@ -84,8 +85,8 @@ body main form {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 60%;
-  margin: 50px auto 100px auto;
+  width: 70%;
+  margin: 10px auto 100px auto;
 }
 body main form div {
   display: flex;
@@ -399,4 +400,4 @@ body main article .info .name h3 img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sty.map */
