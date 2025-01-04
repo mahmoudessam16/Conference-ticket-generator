@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-bottom: 150px;
 }
 body .top {
   position: absolute;
@@ -43,6 +44,7 @@ body .lines {
 body .bottom {
   position: absolute;
   bottom: 0px;
+  left: 0px;
   width: 600px;
   z-index: -1;
 }
@@ -85,7 +87,6 @@ body main form {
   flex-direction: column;
   color: white;
   width: 60%;
-  padding: 50px 0 120px 0;
   margin: 0 auto;
 }
 body main form div {
@@ -99,7 +100,7 @@ body main form div label {
 }
 body main form div input {
   margin: 10px 0;
-  padding: 12px 0 12px 10px;
+  padding: 15px 0 15px 10px;
   border-radius: 11px;
   border: 1px solid rgb(135, 132, 164);
   outline: none;
