@@ -84,7 +84,7 @@ body {
             h1 {
                 font-size: 60px;
                 color: $Neutral0;
-                padding: 30px 50px 0px;
+                padding: 20px 50px 0px;
             }
             p {
                 width: 100%;
@@ -99,7 +99,8 @@ body {
             flex-direction: column;
             color: white;
             width: 60%;
-            margin: 50px auto 100px auto;
+            padding: 50px 0 120px 0;
+            margin: 0 auto;
             div {
                 display: flex;
                 flex-direction: column;

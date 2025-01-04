@@ -71,7 +71,7 @@ body main section {
 body main section h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
-  padding: 30px 50px 0px;
+  padding: 20px 50px 0px;
 }
 body main section p {
   width: 100%;
@@ -85,7 +85,8 @@ body main form {
   flex-direction: column;
   color: white;
   width: 60%;
-  margin: 50px auto 100px auto;
+  padding: 50px 0 120px 0;
+  margin: 0 auto;
 }
 body main form div {
   display: flex;
